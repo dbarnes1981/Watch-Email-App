@@ -37,8 +37,9 @@
       border-spacing: 0;
     }
     .top-details {
+      width: 600px;
       background-color: #0B2340;
-      padding: 10px;
+      /* padding: 10px; */
       text-align: center;
     }
     .top-details, img, p {
@@ -50,15 +51,17 @@
     .title_bg {
       background-color: #fff;
       text-align: center;
-      padding: 10px;
+      padding: 3px;
     }
     .banner_bg {
+      width: 100%;
+      max-width: 600px;
       background-color: #EBE8E4;
       height: 30vh;
     }
     .banner_bg, img {
       text-align:center;
-      padding: 5px;
+      padding: 10px 25px;
     }
     .fam_style, .never_seen, .first_para, .second_para  {
       text-align: center;
@@ -106,19 +109,24 @@
       color: #0B2340;
       font-weight: 500;
     }
-    .unsub {
+    .address_details, .unsub, .designer {
+      background-color: #EBE8E4;
+      font-size: 0.7rem;
+      line-height: 1.5;
+    }
+    /* .unsub {
       color: darkgrey;
       font-style:italic;
       font-size: 0.7rem;
-    }
+    } */
     span {
       text-decoration: underline;
       cursor: pointer;
     }
-    .designer {
+    /* .designer {
       font-size: 0.7rem;
       color: darkgrey;
-    }
+    } */
   </style>
 </head>
 <body>
@@ -129,9 +137,9 @@
 
     <!-- TOP DETAILS -->
       <tr>
-        <td height="25" class="top-details" width="600" style="max-width: 100%;">
-          <img src="https://i.ibb.co/gz6zc6n/truck-solid.png" width="20">
-          <p> Free 2-day shipping on all domestic orders.</p>
+        <td height="35" class="top-details">
+          <img src="https://i.ibb.co/gz6zc6n/truck-solid.png" width="17" style="padding: 3px 5px;">
+          <p style="margin:0 auto;padding:8px 3px 0px 3px;"> Free 2-day shipping on all domestic orders.</p>
         </td>
       </tr>
 
@@ -139,7 +147,7 @@
 
       <tr>
         <td>
-          <table width="100%">
+          <table width="100%" cellspacing="0" cellpadding="0">
 
             <tr>
               <td class="title_bg">
@@ -155,11 +163,11 @@
 
       <tr>
         <td>
-          <table width="100%">
+          <table width="100%" cellspacing="0" cellpadding="0">
 
             <tr>
               <td class="banner_bg">
-                <img src="https://i.ibb.co/FJLtqjL/banner-img.jpg" alt="banner-img" width="400">
+                <img src="https://i.ibb.co/FJLtqjL/banner-img.jpg" alt="banner-img" style="width: 100%;max-width: 400px;">
               </td>
             </tr>
 
@@ -176,6 +184,10 @@
                 <h2 style="color:#504033;text-transform: capitalize;text-align:center;margin: 0 auto;padding: 5px 0 15px;">like you've never seen it before.</h2>
               </td>
             </tr>
+
+          </table>
+        </td>
+      </tr>
 
           <!-- 1ST PARAGRAPH -->
 
@@ -204,7 +216,7 @@
             <!-- 2ND BANNER  -->
             <tr>
               <td>
-                <table width="100%">
+                <table width="100%" cellspacing="0" cellpadding="0">
 
                   <tr>
                     <td class="watch_img_section">
@@ -270,7 +282,7 @@
 
             <tr>
               <td>
-                <table width="100%" width="600" style="max-width: 100%;">
+                <table width="100%" cellspacing="0" cellpadding="0" width="600" style="max-width: 100%;">
 
                   <tr>
                     <td height="30" class="footer_first">
@@ -289,20 +301,22 @@
 
                 </table>
               </td>
+
             </tr>
 
             <!-- FOOTER ICONS -->
 
             <tr>
               <td>
-                <table width="100%">
+                <table width="100%" cellspacing="0" cellpadding="0">
 
                   <tr>
                     <td class="icons">
-                      <a href="#"><img src="https://i.ibb.co/2ttPmHj/facebook-f-brands.png" alt=""></a>
-                      <a href="#"><img src="https://i.ibb.co/R0rcbD1/instagram-brands.png" alt=""></a>
-                      <a href="#"><img src="https://i.ibb.co/Kx652fW/linkedin-brands.png" alt=""></a>
-                      <a href="#"><img src="https://i.ibb.co/88LL3xM/pinterest-p-brands.png" alt=""></a>
+                      <a href="#"><img src="https://i.ibb.co/2ttPmHj/facebook-f-brands.png" alt="face_book_logo" style="max-width:50px; width:100%;"></a>
+                      <a href="#"><img src="https://i.ibb.co/R0rcbD1/instagram-brands.png" alt="instagram_logo" style="max-width:50px; width:100%;"></a>
+                      <a href="#"><img src="https://i.ibb.co/Kx652fW/linkedin-brands.png" alt="linkedin_logo" style="max-width:50px; width:100%;"></a>
+                      <a href="#"><img src="https://i.ibb.co/88LL3xM/pinterest-p-brands.png" alt="pinterest_logo" style="max-width:50px; width:100%;">
+                      </a>
                     </td>
                   </tr>
 
@@ -314,7 +328,7 @@
 
             <tr>
               <td>
-                <table width="100%">
+                <table width="100%" cellspacing="0" cellpadding="0">
 
                   <tr>
                     <td class="web_details">
@@ -322,28 +336,35 @@
                     </td>
                   </tr>
 
+              <!-- FINAL DETAILS -->
+
                   <tr>
-                    <td class="address_details">
-                      <p>Sent from Jack Mason:<br>
-                        3030 Canton St #130, Dallas, TX 75226</p>
+                    <td>
+                      <table width="100%" cellspacing="0" cellpadding="0">
+
+                        <tr>
+                          <td class="address_details">
+                            <p style="color:darkgrey;">Sent from Jack Mason:<br>
+                              3030 Canton St #130, Dallas, TX 75226</p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="unsub">
+                            <p style="color:darkgrey;">No longer want to receive emails? <span>Unsubscribe</span> or <span>Manange Your Preferences</span></p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="designer">
+                            <p style="color:darkgrey;">Design By Dionte Barnes</p>
+                          </td>
+                        </tr>
+
+                      </table>
                     </td>
                   </tr>
 
-                  <tr>
-                    <td class="unsub">
-                      <p>No longer want to receive emails? <span>Unsubscribe</span> or <span>Manange Your Preferences</span></p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="designer">
-                      <p>Design By Dionte Barnes</p>
-                    </td>
-                  </tr>
-
-                </table>
-              </td>
-            </tr>
 
           </table>
         </td>
